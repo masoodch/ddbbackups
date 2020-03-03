@@ -1,5 +1,5 @@
 #Get all regions
-$regions = (Get-AWSRegion | Where-Object {($_.region -ne "us-iso-east-1") -AND ($_.region -ne "us-isob-east-1") -AND ($_.region -like "us*")}).region
+$regions = (Get-AWSRegion | Where-Object {($_.region -ne "us-iso-east-1") -AND ($_.region -ne "us-isob-east-1")}).region
 
 foreach ($region in $regions)
 {
